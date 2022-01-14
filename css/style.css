@@ -70,7 +70,7 @@ body {
 }
 
 .hero__body {
-    min-width: 340px;
+    width: 340px;
     position: relative;
     z-index: 1;
 }
@@ -349,7 +349,7 @@ body {
     }
 
     .hero__body {
-        min-width: 300px;
+        width: 300px;
     }
 
     .hero__name {
@@ -384,7 +384,7 @@ body {
     }
 
     .hero__body {
-        min-width: 280px;
+        width: 280px;
     }
 
     .hero__name {
