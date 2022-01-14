@@ -1057,21 +1057,17 @@ function renderData(data) {
                 </div>`;
     $modalList.append(modalHtml);
 
+    const voteCountHtml = type === "cam_nghi_ca_nhan" ? "" : `<div class="hero__pos">Số lượt bình chọn: ${hero.votes_count}</div>`;
+
     const heroHtml = `
-                <div class="hero">
-                    <div class="hero__body wow ${
-                      index % 2 ? "fadeInLeft" : "fadeInRight"
-                    }">
-                        <div class="hero__name">
-                            <a href="#!" data-bs-toggle="modal" data-bs-target="#popup-${index}">${
-      index + 1
-    }. ${hero.title}</a>
-                        </div>
-                        <div class="hero__pos">Số lượt bình chọn: ${
-                          hero.votes_count
-                        }</div>
-                    </div>
-                </div>`;
+      <div class="hero">
+          <div class="hero__body wow ${index % 2 ? "fadeInLeft" : "fadeInRight"}">
+              <div class="hero__name">
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#popup-${index}"><span class="hero__count">${index + 1}</span>${hero.title}</a>
+              </div>
+              ${voteCountHtml}
+          </div>
+      </div>`;
     $heroList.append(heroHtml);
   });
 
