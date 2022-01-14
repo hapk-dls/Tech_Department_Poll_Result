@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-Poppins.woff2") format("woff2"),
+    url("../fonts/SVN-Poppins.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-PoppinsItalic.woff2") format("woff2"),
+    url("../fonts/SVN-PoppinsItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-PoppinsBold.woff2") format("woff2"),
+    url("../fonts/SVN-PoppinsBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-PoppinsBoldItalic.woff2") format("woff2"),
+    url("../fonts/SVN-PoppinsBoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: calc(61.14% + 30px);
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  max-height: 57vw;
+}
+
+.banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.hero:nth-child(even) {
+    justify-content: end;
+}
+
+.hero__body {
+    min-width: 340px;
+}
+
+.hero__name {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero__name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero__name a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero__pos {
+    font-size: 25px;
+    color: #8b8b8b;
+}
+
+.popup .modal-dialog {
+    max-width: 47.5vw;
+}
+
+.popup .modal-content {
+    position: relative;
+    z-index: 1;
+    border: 0;
+    border-radius: 0;
+    box-shadow: unset;
+}
+
+.popup .modal-body {
+    padding: 0;
+    background: 0;
+}
+
+.popup__bg {
+    display: block;
+    width: 100%;
+}
+
+.popup__content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 20px;
+    position: absolute;
+    z-index: 10;
+    top: 24%;
+    bottom: 24%;
+    left: 16%;
+    right: 16%;
+}
+
+.popup__content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	border-radius: 4px;
+	background-color: #F5F5F5;
+}
+
+.popup__content::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+.popup__content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	background-color: #999;
+}
+
+.popup__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.popup__message {
+    font-size: 18px;
+    color: #303030;
+    line-height: 1.23;
+    font-style: italic;
+}
+
+.popup__message:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+
+.popup__close {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup__close::before,
+.popup__close::after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 3px;
+    border-radius: 2px;
+    background: #7d7d7d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup__close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.custom-card {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+    border: 0;
+    transition: 0.9s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+.custom-card .card-body {
+    display:  none !important;
+}
+
+.custom-card .card-title {
+    font-size: 18px;
+}
+
+.custom-card .card-title a {
+    display: inline-block;
+    color: #fff !important;
+    background: linear-gradient(to right, #F48785, #CE80F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-card .card-title-2 a {
+    display: inline-block;
+    color: #fff !important;
+    background: linear-gradient(to right, #7750F3, #64C5F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-card .card-title-3 a {
+    display: inline-block;
+    color: #fff !important;
+    background: linear-gradient(to right, #EA4E53, #ABB4C5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1699px) {
+    .popup__message {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 1399px) {
+    .hero:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .hero__name {
+        font-size: 24px;
+    }
+
+    .hero__pos {
+        font-size: 18px;
+    }
+
+    .popup__message {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .hero__body {
+        min-width: 280px;
+    }
+
+    .hero__name {
+        font-size: 20px;
+    }
+
+    .hero__pos {
+        font-size: 16px;
+    }
+
+    .popup__message {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: flex-start !important;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero__body {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .popup .modal-dialog {
+        max-width: 80%;
+    }
+
+    .popup__close {
+        width: 30px;
+        height: 30px;
+    }
+
+    .popup__close::before,
+    .popup__close::after {
+        width: 18px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 90%;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .popup .modal-dialog {
+        max-width: 100%;
+    }
+
+    .popup__content {
+        left: 6%;
+        right: 9%;
+        padding-right: 16px;
+    }
+
+    .popup__close {
+        top: 4px;
+        right: 4px;
+        left: auto;
+        transform: unset;
+    }
+}
