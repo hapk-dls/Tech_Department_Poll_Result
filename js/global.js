@@ -974,12 +974,12 @@ const camNghiCaNhan = [
     ],
   },
   {
-    title: "SystemAdmin",
+    title: "System Admin",
     votes_count: 2,
     notes: [
       {
         name: "Nguyễn Hữu Đức",
-        note: "SystemAdmin luôn sẵn sàng hỗ trợ giải đáp mọi thắc mắc cho DEV về config, server..., cũng như luôn sẵn sàng tư vấn về thiết bị, nên mua gì, loại nào tốt, và sẵn sàng xử lý sự cố bất kể ngày đêm",
+        note: "System Admin luôn sẵn sàng hỗ trợ giải đáp mọi thắc mắc cho DEV về config, server..., cũng như luôn sẵn sàng tư vấn về thiết bị, nên mua gì, loại nào tốt, và sẵn sàng xử lý sự cố bất kể ngày đêm",
       },
       {
         name: "Nguyễn Mạnh Tiến",
